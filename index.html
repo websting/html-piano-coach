@@ -13,7 +13,6 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-
     <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="./src/style.css" />
   </head>
@@ -46,7 +45,7 @@
           </h1>
           <!-- Hero content -->
           <p
-            class="text-lg md:text-2xl text-gray-200 mb-12 max-w-xl mx-auto animate-fade-in delay-300"
+            class="text-lg md:text-2xl text-gray-400 mb-12 max-w-xl mx-auto animate-fade-in delay-300"
           >
             Transform your passion into performance with personalized piano
             coaching that brings out your best.
@@ -103,20 +102,30 @@
             <h2
               class="text-4xl md:text-5xl font-extrabold mb-6 text-white drop-shadow-lg"
             >
-              About<span class="text-yellow-400"> Me</span>🎹
+              About<span class="text-yellow-400"> the Coach</span>🎹
             </h2>
 
-            <p class="text-gray-300 text-lg leading-relaxed">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis a quidem suscipit fuga libero. Autem, id repudiandae provident temporibus ducimus fuga! Facere, similique necessitatibus.
-            </p>
+            <p class="text-lg text-gray-600 mb-6">
+        With years of experience in performance and education, I help students of all levels 
+        discover their unique musical voice. My lessons combine classical techniques with 
+        modern creativity — so every player feels inspired and confident in their growth.
+      </p>
 
-            <p class="text-gray-400 mt-5 text-lg leading-relaxed">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur, magnam molestiae? Aliquam beatae, temporibus laboriosam optio eum veritatis perferendis ipsam laborum obcaecati consequuntur at voluptas, dignissimos veniam adipisci? Sequi saepe consequuntur rerum error eum suscipit labore?
-            </p>
+            <p class="text-lg text-gray-600 mb-8">
+        Whether you’re just starting out or preparing for advanced auditions, my approach is 
+        personalized, encouraging, and focused on building both skill and passion for music.
+      </p>
 
-            <p class="text-gray-400 mt-5 text-lg leading-relaxed italic">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit voluptate et unde debitis ducimus.
-            </p>
+            <p class="text-lg text-gray-600 mb-8">
+        I believe music should feel natural, expressive, and enjoyable. 
+        My goal is to make every lesson a space where you can challenge yourself, 
+        explore your potential, and truly connect with the art of playing.
+      </p>
+            <a 
+        href="#programs" 
+        class="inline-block bg-indigo-600 m-3 text-white font-medium px-8 py-3 rounded-md hover:bg-indigo-700 transition-colors duration-300">
+        Explore Programs
+      </a>
 
             <a
               href="#"
@@ -129,208 +138,329 @@
       </section>
 
       <!-- Programs Section -->
-      <section
-        id="programs"
-        class="min-h-screen bg-black text-white py-40 px-6"
+<section id="programs" class="min-h-screen bg-black text-white py-40 px-6">
+  <h1
+    class="text-4xl md:text-5xl font-extrabold text-center mb-12 animate-fade-in"
+    data-aos="fade-down"
+    data-aos-duration="1000"
+  >
+    Foundations <span class="text-yellow-400">of Music</span> 🎶✨
+  </h1>
+  <p class="text-lg text-gray-400 mb-16 text-center">
+    From your first notes to polished performances, each program is designed
+    to help you grow as a confident, expressive musician.
+  </p>
+  <!-- Tabs -->
+  <div class="max-w-5xl mx-auto">
+    <div class="flex justify-center mb-12 space-x-4">
+      <button
+        id="tab-beginner"
+        class="tab-btn bg-yellow-400 text-black font-semibold px-6 py-2 rounded-md transition duration-300"
+        onclick="showProgram('beginner')"
       >
-        <h1
-          class="text-4xl md:text-5xl font-extrabold text-center mb-12 animate-fade-in"
-          data-aos="fade-down"
-          data-aos-duration="1000"
-        >
-          Dive Into <span class="text-yellow-400">Major Fun!</span> 🎶✨
-        </h1>
-        <!-- Cards Section -->
-        <div class="grid gap-10 md:grid-cols-3 max-w-6xl mx-auto w-[90%]">
-          <!-- Card 1 -->
-          <div
-            class="bg-white text-black rounded-lg overflow-hidden shadow-2xl transform hover:scale-105 transition duration-500 animate-slide-up delay-200 cursor-pointer"
-          >
-            <img
-              src="/assets/musicsheet.jpg"
-              alt="Beginner"
-              class="w-full h-48 object-cover brightness-90 hover:brightness-100 transition duration-300"
-            />
-            <div class="p-6">
-              <h3 class="text-2xl font-semibold mb-3">Beginner Beats 🥁</h3>
-              <p class="text-gray-700 leading-relaxed">
-                Just starting out? Perfect! We'll guide you through the basics
-                with easy-to-follow lessons that turn confusion into confidence.
-              </p>
-            </div>
-          </div>
-          <!-- Card 2 -->
-          <div
-            class="bg-white text-black rounded-lg overflow-hidden shadow-2xl transform hover:scale-105 transition duration-500 animate-slide-up delay-300 cursor-pointer"
-          >
-            <img
-              src="/assets/threekey.jpg"
-              alt="Intermediate"
-              class="w-full h-48 object-cover brightness-90 hover:brightness-100 transition duration-300"
-            />
-            <div class="p-6">
-              <h3 class="text-2xl font-semibold mb-3">
-                Intermediate Groove 🎹
-              </h3>
-              <p class="text-gray-700 leading-relaxed">
-                Ready to level up? Challenge yourself with new rhythms and
-                techniques that make every note feel like magic.
-              </p>
-            </div>
-          </div>
-          <!-- Card 3 -->
-          <div
-            class="bg-white text-black rounded-lg overflow-hidden shadow-2xl transform hover:scale-105 transition duration-500 animate-slide-up delay-400 cursor-pointer"
-          >
-            <img
-              src="/assets/advanced.jpg"
-              alt="Advanced"
-              class="w-full h-48 object-cover brightness-90 hover:brightness-100 transition duration-300"
-            />
-            <div class="p-6">
-              <h3 class="text-2xl font-semibold mb-3">Advanced Virtuoso 🎼</h3>
-              <p class="text-gray-700 leading-relaxed">
-                Master your craft with complex compositions and techniques
-                designed for those who dare to dazzle.
-              </p>
-            </div>
-          </div>
+        Beginner Beats
+      </button>
+      <button
+        id="tab-intermediate"
+        class="tab-btn text-white border border-gray-600 font-semibold px-6 py-2 rounded-md hover:bg-gray-800 transition duration-300"
+        onclick="showProgram('intermediate')"
+      >
+        Intermediate Groove
+      </button>
+      <button
+        id="tab-advanced"
+        class="tab-btn text-white border border-gray-600 font-semibold px-6 py-2 rounded-md hover:bg-gray-800 transition duration-300"
+        onclick="showProgram('advanced')"
+      >
+        Advanced Virtuoso
+      </button>
+    </div>
+    <!-- Program Content -->
+    <div class="relative max-w-4xl mx-auto">
+      <!-- Beginner -->
+      <div id="program-beginner" class="program-tab animate-fade-in" data-aos="fade-up" data-aos-duration="800">
+        <img
+          src="/assets/musicsheet.jpg"
+          alt="Beginner"
+          class="w-full h-64 object-cover rounded-lg mb-8 shadow-2xl brightness-90"
+        />
+        <h3 class="text-3xl font-semibold text-center mb-3">Foundations of Music 🥁</h3>
+        <p class="text-gray-400 text-center mb-6">
+          Build a solid musical base through hands-on lessons that make learning enjoyable.
+          Gain rhythm, coordination, and confidence from day one while exploring your favorite styles.
+        </p>
+        <ul class="text-gray-400 mb-8 space-y-2">
+          <li><span class="font-semibold text-white">Level:</span> Beginner</li>
+          <li><span class="font-semibold text-white">Focus:</span> Technique, timing, and basic theory</li>
+          <li><span class="font-semibold text-white">Includes:</span> Practice guides and weekly feedback</li>
+        </ul>
+        <div class="text-center">
+          <a href="#contact" 
+             class="inline-block bg-indigo-600 text-white font-medium px-6 py-3 rounded-md hover:bg-indigo-700 transition-colors duration-300">
+             Join the Program
+          </a>
         </div>
-        <!-- Text Section -->
-        <div
-          class="max-w-4xl mx-auto mt-16 text-center animate-fade-in delay-500"
-          data-aos="fade-up"
-          data-aos-duration="1000"
-        >
-          <h2 class="text-3xl md:text-4xl font-bold mb-5">
-            Pick Your Challenge — And Get Ready to Shine!
-          </h2>
-          <p class="text-gray-300 text-lg leading-relaxed px-4 md:px-0">
-            Whether you're tapping your first keys or perfecting your
-            performance, every journey starts here. No regrets, just pure
-            musical joy ahead!
-          </p>
+      </div>
+      <!-- Intermediate -->
+      <div id="program-intermediate" class="program-tab hidden" data-aos="fade-up" data-aos-duration="800">
+        <img
+          src="/assets/threekey.jpg"
+          alt="Intermediate"
+          class="w-full h-64 object-cover rounded-lg mb-8 shadow-2xl brightness-90"
+        />
+        <h3 class="text-3xl font-semibold text-center mb-3">Develop Your Sound 🎶</h3>
+        <p class="text-gray-400 text-center mb-6">
+          For musicians ready to move beyond the basics. Refine your tone, expand your repertoire,
+          and discover your creative style through personalized coaching and curated lessons.
+        </p>
+        <ul class="text-gray-400 mb-8 space-y-2">
+          <li><span class="font-semibold text-white">Level:</span> Intermediate</li>
+          <li><span class="font-semibold text-white">Focus:</span> Expression, consistency, and confidence</li>
+          <li><span class="font-semibold text-white">Includes:</span> Custom lesson plans and performance feedback</li>
+        </ul>
+        <div class="text-center">
+          <a href="#contact" 
+             class="inline-block bg-indigo-600 text-white font-medium px-6 py-3 rounded-md hover:bg-indigo-700 transition-colors duration-300">
+             Start Learning
+          </a>
         </div>
-      </section>
+      </div>
+      <!-- Advanced -->
+      <div id="program-advanced" class="program-tab hidden" data-aos="fade-up" data-aos-duration="800">
+        <img
+          src="/assets/advanced.jpg"
+          alt="Advanced"
+          class="w-full h-64 object-cover rounded-lg mb-8 shadow-2xl brightness-90"
+        />
+        <h3 class="text-3xl font-semibold text-center mb-3">Performance Mastery 🎼</h3>
+        <p class="text-gray-400 text-center mb-6">
+          Designed for advanced players pursuing excellence. Master complex techniques, elevate your stage presence,
+          and prepare for recording sessions, competitions, or professional gigs.
+        </p>
+        <ul class="text-gray-400 mb-8 space-y-2">
+          <li><span class="font-semibold text-white">Level:</span> Advanced</li>
+          <li><span class="font-semibold text-white">Focus:</span> Artistry, performance, and interpretation</li>
+          <li><span class="font-semibold text-white">Includes:</span> One-on-one coaching and recital opportunities</li>
+        </ul>
+        <div class="text-center">
+          <a href="#contact" 
+             class="inline-block bg-indigo-600 text-white font-medium px-6 py-3 rounded-md hover:bg-indigo-700 transition-colors duration-300">
+             Apply Now
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Footer Text -->
+  <div
+    class="max-w-4xl mx-auto mt-20 text-center animate-fade-in delay-500"
+    data-aos="fade-up"
+    data-aos-duration="1000"
+  >
+    <h2 class="text-3xl md:text-4xl font-bold mb-5">
+      Pick Your Challenge — And Get Ready to Shine!
+    </h2>
+    <p class="text-gray-400 text-lg leading-relaxed px-4 md:px-0">
+      Whether you're tapping your first keys or perfecting your
+      performance, every journey starts here. No regrets, just pure
+      musical joy ahead!
+    </p>
+  </div>
+</section>
+
 
       <!-- Events Section -->
-      <section id="events" class="min-h-screen bg-black py-30 px-6 text-white">
-        <div class="max-w-6xl mx-auto text-center mt-12">
-          <!-- Heading -->
+<section id="events" class="min-h-screen bg-black py-30 px-6 text-white">
+  <div class="max-w-6xl mx-auto text-center mt-12">
+    <!-- Heading -->
+    <h1
+      class="text-4xl md:text-5xl font-serif italic mb-12"
+      data-aos="fade-left"
+      data-aos-duration="1000"
+    >
+      Discover What's <span class="text-yellow-400">Coming Up</span> 🎶
+    </h1>
+
+    <!-- Main Content Row -->
+    <div class="flex flex-col md:flex-row items-center justify-center gap-12">
+      
+      <!-- Left Column: Image + Text -->
+      <div
+        class="w-full md:w-1/2 text-center px-4 space-y-6"
+        data-aos="fade-right"
+        data-aos-duration="1000"
+      >
+        <!-- Feature Image (moved here) -->
+        <div
+          class="w-[80%] max-w-md h-[220px] border-8 border-white rounded-lg overflow-hidden shadow-lg mb-6 ml-10"
+        >
+          <img
+            src="/assets/concert-thumb.jpg"
+            alt="Feature Event"
+            class="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+          />
+        </div>
+
+        <!-- Text -->
+        <p class="text-gray-400 text-lg leading-relaxed">
+          Our calendar is packed with exciting performances, student
+          showcases, and collaborative workshops. Whether you're new or a
+          seasoned player, these events are where confidence and community
+          grow. Come join the fun!
+        </p>
+
+        <!-- Add to Calendar Button -->
+        <a
+          href="https://calendar.google.com/calendar/u/0/r/eventedit?text=Recital+Showcase&dates=20250820T180000Z/20250820T200000Z&details=Join+us+for+a+fun-filled+night+of+music+and+memories!&location=Your+Studio+Location"
+          target="_blank"
+          class="inline-block px-6 py-3 bg-yellow-400 text-black font-semibold rounded-full hover:bg-yellow-300 transition"
+          aria-label="Add event to Google Calendar"
+        >
+          📅 Add to Calendar
+        </a>
+      </div>
+
+      <!-- Right Column: Videos -->
+      <div class="w-full md:w-1/2 flex flex-col items-center gap-8">
+        
+        <!-- Small Image Row -->
+        <div
+          class="flex items-center gap-4 bg-gray-100 p-5 rounded-lg shadow-xl w-[80%] max-w-md relative group hover:scale-105 transition-transform duration-300 cursor-pointer"
+          onclick="toggleVideo()" aria-label="Play recital highlight video"
+        >
+          <!-- Thumbnail w/ Play Icon -->
+          <div class="relative w-[500px]">
+            <img
+              src="/assets/live-banner-thumb.png"
+              alt="Thumbnail"
+              class="w-full border-[5px] border-gray-400 rounded"
+            />
+            <i
+              class="fa-solid fa-play absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-2xl group-hover:text-yellow-400 transition"
+            ></i>
+          </div>
+          <!-- Description -->
+          <p class="text-gray-700 text-left text-sm leading-snug">
+            Highlights from our latest recital — full of energy, talent,
+            and unforgettable moments.
+          </p>
+        </div>
+
+        <div
+          class="flex items-center gap-4 bg-gray-100 p-5 rounded-lg shadow-xl w-[80%] max-w-md relative group hover:scale-105 transition-transform duration-300 cursor-pointer"
+          onclick="toggleVideo()" aria-label="Play recital highlight video"
+        >
+          <!-- Thumbnail w/ Play Icon -->
+          <div class="relative w-[500px]">
+            <img
+              src="/assets/live-banner-thumb.png"
+              alt="Thumbnail"
+              class="w-full border-[5px] border-gray-400 rounded"
+            />
+            <i
+              class="fa-solid fa-play absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-2xl group-hover:text-yellow-400 transition"
+            ></i>
+          </div>
+          <!-- Description -->
+          <p class="text-gray-700 text-left text-sm leading-snug">
+            Highlights from our latest recital — full of energy, talent,
+            and unforgettable moments.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Video Modal -->
+  <div
+    id="video-modal"
+    class="fixed inset-0 bg-black bg-opacity-80 items-center justify-center z-50 hidden"
+  >
+    <div class="relative w-[90%] md:w-[60%] lg:w-[40%]">
+      <!-- Close Button -->
+      <button
+        class="absolute top-[-40px] right-0 text-white text-4xl hover:text-yellow-400 transition"
+        onclick="toggleVideo()"
+        aria-label="Close video"
+      >
+        &times;
+      </button>
+      <!-- Video Player -->
+      <video controls autoplay class="w-full rounded shadow-2xl">
+        <source src="/video/pianovideo.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  </div>
+</section>
+
+
+      <!-- Testimonial Section -->
+       <section id="testimonials" class="class=min-h-screen bg-black text-white py-40 px-6">
+  <div class="max-w-6xl mx-auto px-6 text-center">
+    <!-- Heading -->
           <h1
             class="text-4xl md:text-5xl font-serif italic mb-12"
             data-aos="fade-left"
             data-aos-duration="1000"
           >
-            Discover What's <span class="text-yellow-400">Coming Up</span> 🎶
+            What Students <span class="text-yellow-400">Are Saying</span> 😲
           </h1>
-          <!-- Main Content Row -->
-          <div
-            class="flex flex-col md:flex-row items-center justify-center gap-12"
-          >
-            <!-- Left Column: Text -->
-            <div
-              class="w-full md:w-1/2 text-left px-4 space-y-6"
-              data-aos="fade-right"
-              data-aos-duration="1000"
-            >
-              <p class="text-gray-300 text-lg leading-relaxed">
-                Our calendar is packed with exciting performances, student
-                showcases, and collaborative workshops. Whether you're new or a
-                seasoned player, these events are where confidence and community
-                grow. Come join the fun!
-              </p>
-              <!-- Add to Calendar Button -->
-              <a
-                href="https://calendar.google.com/calendar/u/0/r/eventedit?text=Recital+Showcase&dates=20250820T180000Z/20250820T200000Z&details=Join+us+for+a+fun-filled+night+of+music+and+memories!&location=Your+Studio+Location"
-                target="_blank"
-                class="inline-block px-6 py-3 bg-yellow-400 text-black font-semibold rounded-full hover:bg-yellow-300 transition" aria-label="Add event to Google Calendar"
-              >
-                📅 Add to Calendar
-              </a>
-            </div>
-            <!-- Right Column: Images -->
-            <div class="w-full md:w-1/2 flex flex-col items-center gap-8">
-              <!-- Feature Image -->
-              <div
-                class="w-[80%] max-w-md h-[220px] border-8 border-white rounded-lg overflow-hidden shadow-lg relative"
-              >
-                <img
-                  src="/assets/concert-thumb.jpg"
-                  alt="Feature Event"
-                  class="w-full h-full object-cover"
-                />
-              </div>
-              <!-- Small Image Row -->
-              <div
-                class="flex items-center gap-4 bg-gray-100 p-5 rounded-lg shadow-xl w-[80%] max-w-md relative group hover:scale-105 transition-transform duration-300 cursor-pointer"
-                onclick="toggleVideo()" aria-label="Play recital highlight video"
-              >
-                <!-- Thumbnail w/ Play Icon -->
-                <div class="relative w-[500px]">
-                  <img
-                    src="/assets/live-banner-thumb.png"
-                    alt="Thumbnail"
-                    class="w-full border-[5px] border-gray-400 rounded"
-                  />
-                  <i
-                    class="fa-solid fa-play absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-2xl group-hover:text-yellow-400 transition"
-                  ></i>
-                </div>
-                <!-- Description -->
-                <p class="text-gray-700 text-left text-sm leading-snug">
-                  Highlights from our latest recital — full of energy, talent,
-                  and unforgettable moments.
-                </p>
-              </div>
-              <div
-                class="flex items-center gap-4 bg-gray-100 p-5 rounded-lg shadow-xl w-[80%] max-w-md relative group hover:scale-105 transition-transform duration-300 cursor-pointer"
-                onclick="toggleVideo()" aria-label="Play recital highlight video"
-              >
-                <!-- Thumbnail w/ Play Icon -->
-                <div class="relative w-[500px]">
-                  <img
-                    src="/assets/live-banner-thumb.png"
-                    alt="Thumbnail"
-                    class="w-full border-[5px] border-gray-400 rounded"
-                  />
-                  <i
-                    class="fa-solid fa-play absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-2xl group-hover:text-yellow-400 transition"
-                  ></i>
-                </div>
-                <!-- Description -->
-                <p class="text-gray-700 text-left text-sm leading-snug">
-                  Highlights from our latest recital — full of energy, talent,
-                  and unforgettable moments.
-                </p>
-              </div>
-            </div>
-          </div>
+    <p class="text-lg text-gray-400 mb-16">
+      Hear from students who’ve grown their confidence, skill, and love for music through personalized coaching.
+    </p>
+    <div class="grid gap-10 md:grid-cols-3">
+      <!-- Testimonial 1 -->
+      <div class="bg-gray-50 rounded-xl shadow-sm p-8 hover:shadow-md transition-shadow duration-300">
+        <p class="text-gray-600 mb-6 italic">
+          “I never thought I’d be able to play with this much confidence. The lessons are clear, inspiring,
+          and perfectly paced. I look forward to every session!”
+        </p>
+        <div class="flex flex-col items-center">
+          <img 
+            src="https://randomuser.me/api/portraits/women/65.jpg" 
+            alt="Student testimonial" 
+            class="w-16 h-16 rounded-full mb-3 object-cover"
+          />
+          <h4 class="font-semibold text-gray-800">Emily Carter</h4>
+          <span class="text-sm text-gray-500">Beginner Student</span>
         </div>
-
-        <!-- Video Modal -->
-        <div
-          id="video-modal"
-          class="fixed inset-0 bg-black bg-opacity-80 items-center justify-center z-50 hidden"
-        >
-          <div class="relative w-[90%] md:w-[60%] lg:w-[40%]">
-            <!-- Close Button -->
-            <button
-              class="absolute top-[-40px] right-0 text-white text-4xl hover:text-yellow-400 transition"
-              onclick="toggleVideo()"
-              aria-label="Close video"
-            >
-              &times;
-            </button>
-
-            <!-- Video Player -->
-            <video controls autoplay class="w-full rounded shadow-2xl">
-              <source src="/video/pianovideo.mp4" type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
-          </div>
+      </div>
+      <!-- Testimonial 2 -->
+      <div class="bg-gray-50 rounded-xl shadow-sm p-8 hover:shadow-md transition-shadow duration-300">
+        <p class="text-gray-600 mb-6 italic">
+          “Working with this program completely changed how I approach music. 
+          I’ve learned to express myself and perform pieces I never thought I could.”
+        </p>
+        <div class="flex flex-col items-center">
+          <img 
+            src="https://randomuser.me/api/portraits/men/33.jpg" 
+            alt="Student testimonial" 
+            class="w-16 h-16 rounded-full mb-3 object-cover"
+          />
+          <h4 class="font-semibold text-gray-800">Daniel Roberts</h4>
+          <span class="text-sm text-gray-500">Intermediate Student</span>
         </div>
-      </section>
+      </div>
+      <!-- Testimonial 3 -->
+      <div id="testimonial" class="bg-gray-50 rounded-xl shadow-sm p-8 hover:shadow-md transition-shadow duration-300">
+        <p class="text-gray-600 mb-6 italic">
+          “Professional, patient, and incredibly talented. The advanced program pushed me to reach new heights.
+          I’ve performed live with confidence for the first time!”
+        </p>
+        <div class="flex flex-col items-center">
+          <img 
+            src="https://randomuser.me/api/portraits/women/12.jpg" 
+            alt="Student testimonial" 
+            class="w-16 h-16 rounded-full mb-3 object-cover"
+          />
+          <h4 class="font-semibold text-gray-800">Sophia Martinez</h4>
+          <span class="text-sm text-gray-500">Advanced Student</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
 
       <!-- Contact Section -->
       <section id="contact" class="min-h-screen bg-black text-white py-40 px-6">
@@ -343,7 +473,7 @@
             Got questions? <span class="text-yellow-400">So do I!</span> 🤔
           </h1>
           <p
-            class="text-gray-300 mb-12 text-lg"
+            class="text-gray-400 mb-12 text-lg"
             data-aos="fade-down"
             data-aos-duration="1000"
           >
@@ -430,7 +560,7 @@
         </div>
       </section>
 
-      <!-- Side Nab, Close Button, and Hamburger Icon (Always visible across all pages) -->
+      <!-- Side Nav Menu, Close Button, and Hamburger Icon (Always visible across all pages) -->
       <section>
         <div class="fixed top-6 left-6 z-50">
           <button id="hamburger" aria-label="Open navigation menu" class="text-white hover:text-yellow-500 cursor-pointer">
@@ -499,6 +629,11 @@
               >
             </li>
             <li>
+              <a href="#testimonials" class="text-2xl text-black-500 hover:text-gray-400"
+                >Testimonials</a
+              >
+            </li>
+            <li>
               <a href="#contact" class="text-2xl text-black-500 hover:text-gray-400"
                 >Contact</a
               >
@@ -524,7 +659,6 @@
             />
           </svg>
         </a>
-
         <!-- YouTube -->
         <a
           href="https://youtube.com/yourchannel"
@@ -537,7 +671,6 @@
             />
           </svg>
         </a>
-
         <!-- Facebook -->
         <a
           href="https://facebook.com/yourprofile"
@@ -550,7 +683,6 @@
             />
           </svg>
         </a>
-
         <!-- Email -->
         <a
           href="mailto:your@email.com"

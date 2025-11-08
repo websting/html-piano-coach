@@ -43,3 +43,25 @@ import './style.css';
     // So functions like toggleVideo() and onclick='toggleVideo() 
     // are attached to window by default
         window.toggleVideo = toggleVideo;
+
+
+// Program Tabs
+        function showProgram(program) {
+  document.querySelectorAll('.program-tab').forEach(tab => tab.classList.add('hidden'));
+  document.getElementById(`program-${program}`).classList.remove('hidden');
+
+  // Tab button highlight
+  document.querySelectorAll('.tab-btn').forEach(btn => {
+    btn.classList.remove('bg-yellow-400', 'text-black');
+    btn.classList.add('text-white', 'border', 'border-gray-600', 'hover:bg-gray-800');
+  });
+  const activeBtn = document.getElementById(`tab-${program}`);
+  activeBtn.classList.remove('text-white', 'border', 'border-gray-600', 'hover:bg-gray-800');
+  activeBtn.classList.add('bg-yellow-400', 'text-black');
+}
+
+// Expose globally so inline HTML onclick can see it
+window.showProgram = showProgram;
+
+// Optional: initialize first tab
+document.addEventListener('DOMContentLoaded', () => showProgram('beginner'));
