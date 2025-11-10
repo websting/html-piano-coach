@@ -8,8 +8,6 @@ A modern, responsive one-page HTML template designed for piano coaches, music te
 
 **Preview:** [Piano Coach Template](https://ahtml-piano-coach-template.netlify.app/)
 
-![Piano Coach Screenshot](for-developers/public/assets/template-screenshot.png)
-
 ---
 
 ## 🚀 Features
@@ -40,16 +38,20 @@ A modern, responsive one-page HTML template designed for piano coaches, music te
 ## 🛠️ Set up instructions:
 
 1. **Unzip** the downloaded template folder.
+
 2. **Open a terminal** and navigate to the project's folder:
    ```bash
-   cd piano-coach
+   cd piano-coach-download
+
 3. **Install dependencies:**  
    ``` bash
        npm install
+
 4. **Start the development server:** 
    ```bash
     npm run dev
    Your local dev server will run at http://localhost:5173 (or a similar port)
+   
 5. **Build for production:** 
    ```bash
       npm run build
