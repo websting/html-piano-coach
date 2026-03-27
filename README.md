@@ -83,6 +83,7 @@ Piano-Coach-Template/
 
 ## 💬 Credits
 
-Template design & development: AH / simpleDesigns
+Template design & development: AH / simpleWebDesigns
 Photos: Unsplash:  https://unsplash.com/
 Icons: Font Awesome:  https://fontawesome.com/
+Fonts:  Google Fonts:  https://fonts.google.com/
