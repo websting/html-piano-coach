@@ -1,6 +1,6 @@
 # 🎹 Piano Coach Template
 
-A modern, responsive one-page HTML template designed for piano coaches, music teachers, and creative professionals who want to showcase lessons, programs, and events with style.
+A modern, responsive one-page HTML template designed for piano coaches, music teachers, and performing artists who want to showcase lessons, programs, and recitals with style.
 
 ---
 
@@ -12,78 +12,90 @@ A modern, responsive one-page HTML template designed for piano coaches, music te
 
 ## 🚀 Features
 
-- 🎵 Smooth scrolling and responsive layout
-- 💨 Styled with **Tailwind CSS 4.x**
+- 🎵 Smooth scrolling and mobile-first responsive layout
+- 💨 Styled with **Tailwind CSS 4.x** and Vite
 - ✨ Animated scroll effects powered by **AOS**
-- 🎤 Modern hero section with call-to-action buttons
-- 🎓 Program cards (Beginner, Intermediate, Advanced)
-- 🎹 Events and recital highlights section
-- 💌 Contact form design *(non-functional by default)*
-- 📱 Mobile hamburger menu and animated side navigation
-- 🔗 Social media sidebar with hover effects
-- 🛠️ Easy to customize and adapt for your own brand
+- 🎤 High-contrast hero section with dual call-to-action buttons
+- 🎓 Interactive program tabs (**Beginner**, **Intermediate**, **Advanced**) with active state highlighting
+- 🎬 Events and recital highlights section with an interactive video lightbox modal
+- ⭐ Student testimonials grid with typewriter callout
+- 💌 Clean contact form layout *(ready for Netlify Forms, Formspree, or custom backend)*
+- 📱 Mobile hamburger drawer with backdrop overlay + signature desktop social rail
+- 🛠️ Cleanly commented code that is easy to customize for any brand
 
 ---
 
 ## 🧱 Tech Stack
 
 - **HTML5**
-- **Tailwind CSS**
-- **JavaScript** (AOS animation library, optional form handling)
+- **Tailwind CSS 4.x**
+- **Vite** (fast dev server and production bundler)
+- **Vanilla JavaScript** (menu drawer, tab switcher, video modal, AOS initialization)
 - **Font Awesome** icons
-- **Unsplash** high-resolution photos
+- **Google Fonts**
 
 ---
 
-## 🛠️ Set up instructions:
+## 🛠️ Setup Instructions
 
 1. **Unzip** the downloaded template folder.
 
-2. **Open a terminal** and navigate to the project's folder:
+2. **Open a terminal** and navigate to the project folder:
    ```bash
    cd piano-coach-download
+   ```
 
-3. **Install dependencies:**  
-   ``` bash
-       npm install
-
-4. **Start the development server:** 
+3. **Install dependencies:**
    ```bash
-    npm run dev
-   Your local dev server will run at http://localhost:5173 (or a similar port)
-   
-5. **Build for production:** 
+   npm install
+   ```
+
+4. **Start the development server:**
    ```bash
-      npm run build
-   This generates a dist/ folder with optimized, production-ready files.
+   npm run dev
+   ```
+   Your local dev server will run at `http://localhost:5173` (or the next available port).
 
-💡 Note:
-The contact form is static and does not collect messages by default.
-You can connect it to Google Sheets, Netlify Forms, or your own backend if needed.
-(Integration setup not included.)
+5. **Build for production:**
+   ```bash
+   npm run build
+   ```
+   This generates a `dist/` folder with optimized, production-ready files.
 
-## 📄 Activating the Download CV Button
+> 💡 **Note:** The contact form is static by default so you can easily connect it to **Netlify Forms** (add `data-netlify="true"` to `<form>`), **Formspree**, **Web3Forms**, or your own backend endpoint.
 
-1. Place your cv.pdf file inside the public/ (or assets/) folder.
-2. Find the Download CV button in your HTML or component file.
-3. Update the link path and add the download attribute:
-   <a href="/cv.pdf" download class="btn">Download CV</a>
+---
 
+## 📄 Customizing Your Content
+
+- **Images & Video:** Replace the placeholder files inside `public/assets/` and `public/video/` with your own photos and recital clips.
+- **Social Links & Calendar:** Update the placeholder URLs in the desktop social sidebar, footer, and Events calendar button in `index.html`.
+- **Downloadable CV / Bio (Optional):** Place your `cv.pdf` inside `public/` and link to it anywhere in `index.html`:
+  ```html
+  <a href="/cv.pdf" download>Download CV</a>
+  ```
+
+---
 
 ## 📁 Folder Structure Overview
 
+```text
 Piano-Coach-Template/
 ├── index.html          # Main landing page
+├── package.json        # Project scripts and dependencies
 ├── public/
-│   └── assets/         # Images and media files
+│   ├── assets/         # Images and thumbnails
+│   └── video/          # Recital video files
 └── src/
-    ├── css/            # Tailwind and custom styles
-    └── js/             # Scripts and AOS initialization     
+    ├── style.css       # Tailwind CSS and custom styles
+    └── main.js         # Menu, tabs, video modal, and AOS scripts
+```
 
+---
 
 ## 💬 Credits
 
-Template design & development: AH / simpleWebDesigns
-Photos: Unsplash:  https://unsplash.com/
-Icons: Font Awesome:  https://fontawesome.com/
-Fonts:  Google Fonts:  https://fonts.google.com/
+- **Template Design & Development:** AH / simpleWebDesigns
+- **Photography:** [Unsplash](https://unsplash.com/)
+- **Icons:** [Font Awesome](https://fontawesome.com/)
+- **Typography:** [Google Fonts](https://fonts.google.com/)
